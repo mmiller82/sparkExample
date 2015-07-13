@@ -18,7 +18,7 @@ import org.apache.spark.api.java.function.Function;
 public class SparkApplication {
     public static void main(String[] args) {
         String logFile = "textfile"; // Should be some file on your system
-        SparkConf conf = new SparkConf().setAppName("Spark Application");
+        SparkConf conf = new SparkConf().setAppName("Spark Application").setMaster("local[*]");
         JavaSparkContext sc = new JavaSparkContext(conf);
         JavaRDD<String> logData = sc.textFile(logFile).cache();
 
