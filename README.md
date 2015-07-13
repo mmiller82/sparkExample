@@ -13,3 +13,6 @@ and Spark Streaming for stream processing.
 ## Example
 The example can be run with this command:
 LOCATION OF YOUR SPARK APPLICATION/bin/spark-submit --class "org.mmiller.spark.SparkApplication" --master local[4]   target/SparkExample-1.0-SNAPSHOT.jar
+
+in my environent
+~/software/spark/bin/spark-submit --class "org.mmiller.spark.SparkApplication" --master local[4]   target/SparkExample-1.0-SNAPSHOT.jar
